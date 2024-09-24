@@ -2,7 +2,7 @@
 
 ## Features
 
-- [x] NextJS 14
+- [x] NextJS App Router
 - [x] TailwindCSS
 - [x] Storybook
 - [x] TypeScript
