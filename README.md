@@ -3,6 +3,6 @@
 ## Features
 
 - [x] NextJS App Router
-- [x] TailwindCSS
+- [x] Tailwind & Tailwind-Variants
 - [x] Storybook
 - [x] TypeScript
