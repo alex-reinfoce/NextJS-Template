@@ -1,3 +1,9 @@
+import { Button } from "@/component/button";
+
 export default function Home() {
-  return <div className="grid">hello world</div>;
+  return (
+    <div className="flex">
+      <Button />
+    </div>
+  );
 }
