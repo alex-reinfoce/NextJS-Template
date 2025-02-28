@@ -2,7 +2,7 @@
 
 ## Features
 
-- [x] NextJS App Router
-- [x] Tailwind & Tailwind-Variants
+- [x] NextJS ^15.2.0
+- [x] Tailwind 4
 - [x] Storybook
 - [x] TypeScript
