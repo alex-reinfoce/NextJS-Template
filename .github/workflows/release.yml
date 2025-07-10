@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Release
 
 on:
   push:
@@ -38,6 +38,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Build project
+        run: pnpm build
+
       - name: Get Playwright version
         id: get-playwright-version
         run: echo "version=$(pnpm list @playwright/test --depth=0 --json | jq -r '.[0].dependencies["@playwright/test"].version')" >> $GITHUB_OUTPUT
@@ -59,8 +62,8 @@ jobs:
         if: steps.playwright-cache.outputs.cache-hit == 'true'
         run: pnpm exec playwright install-deps
 
-      - name: Run Playwright tests
-        run: pnpm exec playwright test
+      - name: Run tests
+        run: pnpm test
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
