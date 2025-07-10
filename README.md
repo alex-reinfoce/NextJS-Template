@@ -25,12 +25,14 @@ A modern, production-ready Next.js template with comprehensive testing, componen
 ## 🚀 Quick Start
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd nextjs-template
    ```
 
 2. **Install dependencies**
+
    ```bash
    pnpm install
    # or
@@ -40,6 +42,7 @@ A modern, production-ready Next.js template with comprehensive testing, componen
    ```
 
 3. **Start development server**
+
    ```bash
    pnpm dev
    ```
@@ -49,40 +52,47 @@ A modern, production-ready Next.js template with comprehensive testing, componen
 
 ## 📜 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start development server with Turbopack |
-| `pnpm build` | Build production application |
-| `pnpm start` | Start production server |
-| `pnpm lint` | Run ESLint |
-| `pnpm test` | Run all tests (unit + E2E) |
-| `pnpm test:unit` | Run unit tests with Vitest |
-| `pnpm e2e` | Run E2E tests with Playwright |
-| `pnpm e2e:ui` | Run E2E tests with Playwright UI |
-| `pnpm storybook` | Start Storybook dev server |
-| `pnpm build-storybook` | Build Storybook for production |
+| Command                | Description                             |
+| ---------------------- | --------------------------------------- |
+| `pnpm dev`             | Start development server with Turbopack |
+| `pnpm build`           | Build production application            |
+| `pnpm start`           | Start production server                 |
+| `pnpm lint`            | Run ESLint                              |
+| `pnpm test`            | Run all tests (unit + E2E)              |
+| `pnpm test:unit`       | Run unit tests with Vitest              |
+| `pnpm e2e`             | Run E2E tests with Playwright           |
+| `pnpm e2e:ui`          | Run E2E tests with Playwright UI        |
+| `pnpm storybook`       | Start Storybook dev server              |
+| `pnpm build-storybook` | Build Storybook for production          |
 
 ## 🧪 Testing
 
 ### Unit Tests
+
 Unit tests are powered by **Vitest** with React Testing Library:
+
 ```bash
 pnpm test:unit
 ```
 
 ### E2E Tests
+
 End-to-end tests use **Playwright** for comprehensive browser testing:
+
 ```bash
 pnpm e2e
 ```
 
 For interactive testing with UI:
+
 ```bash
 pnpm e2e:ui
 ```
 
 ### Component Testing
+
 Components are tested and documented using **Storybook**:
+
 ```bash
 pnpm storybook
 ```
@@ -107,16 +117,19 @@ pnpm storybook
 ## ⚙️ Configuration
 
 ### TypeScript
+
 - Strict mode enabled
 - Path aliases configured (`@/*` → `./`)
 - Latest ES2017 target with modern features
 
 ### Tailwind CSS
+
 - Latest v4 with PostCSS integration
 - Responsive design utilities
 - Custom configuration in `postcss.config.mjs`
 
 ### Next.js
+
 - App Router enabled
 - TypeScript support
 - Optimized for production builds
@@ -124,13 +137,16 @@ pnpm storybook
 ## 🔧 Development
 
 ### Adding New Components
+
 1. Create component in `components/` directory
 2. Add unit tests (`*.test.tsx`)
 3. Create Storybook stories (`*.stories.ts`)
 4. Export from component index file
 
 ### Environment Variables
+
 Create `.env.local` for local development:
+
 ```env
 NEXT_PUBLIC_API_URL=your_api_url
 ```
@@ -141,33 +157,6 @@ NEXT_PUBLIC_API_URL=your_api_url
 - **React 19**: Concurrent features and optimizations
 - **Next.js 15**: Latest performance improvements
 - **Tailwind CSS 4**: Optimized CSS generation
-
-## 🚢 Deployment
-
-### Vercel (Recommended)
-```bash
-vercel --prod
-```
-
-### Docker
-```bash
-docker build -t nextjs-template .
-docker run -p 3000:3000 nextjs-template
-```
-
-### Static Export
-```bash
-pnpm build
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Run the test suite
-6. Submit a pull request
 
 ## 📝 License
 
