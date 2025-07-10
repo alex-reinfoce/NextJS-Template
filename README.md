@@ -11,7 +11,6 @@ A modern, production-ready Next.js template with comprehensive testing, componen
 - **🧪 Testing Suite** - Unit tests with Vitest and E2E tests with Playwright
 - **🚀 Modern React 19** - Latest React with concurrent features
 - **📱 Responsive Design** - Mobile-first approach with Tailwind CSS
-- **🔍 Code Quality** - ESLint configuration for code consistency
 
 ## 🛠️ Tech Stack
 
@@ -57,7 +56,6 @@ A modern, production-ready Next.js template with comprehensive testing, componen
 | `pnpm dev`             | Start development server with Turbopack |
 | `pnpm build`           | Build production application            |
 | `pnpm start`           | Start production server                 |
-| `pnpm lint`            | Run ESLint                              |
 | `pnpm test`            | Run all tests (unit + E2E)              |
 | `pnpm test:unit`       | Run unit tests with Vitest              |
 | `pnpm e2e`             | Run E2E tests with Playwright           |
